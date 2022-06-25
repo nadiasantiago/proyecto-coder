@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="../img/logo-bartolo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Bartolo-Contacto</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1><a href="../index.html">BARTOLO </a></h1>
+        <a href="../index.html">Impresiones 3D</a>
+        <!-- MENU DE NAVEGACION -->
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./novedades.html">Novedades</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li class="nav"><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="contacto">
+        <h2>Contacto</h2>
+        <form class="contenedor-contacto">
+            <div>
+                <label for="campo-nombre">Nombre y Apellido</label>
+                <input type="text" id="campo-nombre" placeholder="Nombre y Apellido" required>
+            </div>
+            <div>
+                <label for="campo-empresa">Empresa</label>
+                <input type="text" id="campo-empresa" placeholder="Empresa">
+            </div>
+            <div>
+                <label for="campo-email">Email</label>
+                <input type="email" id="campo-email" placeholder="ejemplo@gmail.com" required>
+            </div>
+            <div>
+                <label for="campo-tel">Teléfono</label>
+                <input type="tel" id="campo-tel" placeholder="Teléfono">
+            </div>
+            <div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Escriba un mensaje" required></textarea>
+            </div> 
+            <div class="checkbox">
+                <input type="checkbox" id="check-newletter">
+                <label for="check-newletter">Suscribirse al newsletter</label>
+            </div>
+            <input class="submit" type="submit" value="Enviar consulta">
+        </form>
+        
+
+    </main>
+
+    <!-- PIE DE PAGINA -->
+    <footer class="pie">
+        <div class="contenedor-logo">
+            <h4><a href="../index.html">BARTOLO</a></h4>
+            <a href="../index.html">Impresiones 3D</a>
+        </div>
+        <div class="redes-sociales">
+            <ul class="contenedor-redes">
+                <li><a href="https://wa.me/5493413647674" target="_blank"><i class="bi-whatsapp"></i></a></li>
+                <li><a href="https://www.instagram.com/bartolo.impresiones/" target="_blank"><i class="bi-instagram"></i></a></li>
+            </ul>
+        </div>
+        <!-- MENU DE NAVEGACION INFERIOR -->
+        <div class="contenedor-navInferior">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/novedades.html">Novedades</a></li>
+                <li><a href="./pages/productos.html">Productos</a></li>
+                <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <span>Copyright - todos los derechos reservados</span>
+    </footer>
+</body>
+</html>
