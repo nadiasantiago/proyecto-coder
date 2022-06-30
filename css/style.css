@@ -14,11 +14,7 @@ a{
 body{
     background-color: rgb(196, 245, 245);
 }
-/* h2{
-    color: rgb(77, 168, 168);
-    font-size: 2rem;
-    text-align:center;
-} */
+
 
 p{
     text-align: justify;
@@ -31,204 +27,36 @@ header{
     position: sticky;
     top: 0px;
     z-index: 1;
-    display: flex;
-    flex-direction: column;
+}
+
+.nav-link{
     color: black;
 }
-
-header h1{
-    font-weight: lighter;
-    font-size: 2.5rem;
+.carousel-item{
+    height: 450px;
 }
-
-header a{
-    margin-bottom: 4px;
-}
-
-/* header nav{
-    background-color: rgb(137, 194, 194);
-} */
-
-/* header nav ul li{
-    display: inline-block;
-    padding: 5px;
-}
-header nav ul li a{
-    font-size: 1.3rem;
-} */
 
 header nav ul li a:hover{
     font-weight: bold;
 }
 
-@media (min-width:768px) {  
-    /* header h1 a{
-        font-size: 3rem;
-    } */
-    /* header a{
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-    } */
-    /* header nav{
-        align-items: center;
-    } */
-
-}
-
-/* @media (min-width:1024px) {  
-    header nav ul li{
-       width: 150px;
-    }
-} */
-
-/* --------- INICIO --------- */
-/* .videoImpresion3D iframe {
-    width: 100%;
-    padding: 5px;
-}
-.introduccion h2{
-    color: black;
-}
-
-
-.introduccion p{
-    text-align: justify;
-    padding: 20px;
-}
-.contenedor-productos{
-    margin: 15px 0px;
-}
-.contenedor-productos h3{
-    font-size: 1.4rem;
-    padding: 5px;
-    text-align: center;
-}
 .productos{
-    display: flex;
-    overflow-x: scroll;
-}
-.productos img{
-    height: 230px;
-    border-radius: 10px;
-    padding: 3px;
-}
-
-@media (min-width:768px){
-    .introduccion p{
-        font-size: 1.5rem;
-    }
-    h2{
-        font-size: 2rem;
-    }
-    .contenedor-productos h3{
-        font-size: 1.7rem;
-    }
-    .videoImpresion3D iframe {
-        height: 420px;
-        padding: 5px;
-    }
-}
-
-@media (min-width:1024px) {
-    .inicio{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: 1fr 0.75fr;
-        grid-template-areas:
-        "video introduccion"
-        "productos productos";
-    }
-    .videoImpresion3D{
-        grid-area: video; 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .introduccion{
-        grid-area: introduccion;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .contenedor-productos{
-        grid-area: productos;
-    }  
-}
-
-@media (min-width:1200px) {
-    .productos{
-        overflow-x: hidden;
-        justify-content: space-around;
-    }
-} */
-
-/* --------- NOVEDADES y PRODUCTOS --------- */
-.promociones, .productos1{
-    display: flex;
-    flex-direction: column;
-    padding-top: 10px;
-    align-items: center;
-}
-
-.promociones img{
-    height: 250px;
-    border-radius: 10%;
-}
-.contenedor-promociones div{
-    padding: 10px;
-    text-align: center;
-    margin: 10px;
-    background-color: rgba(245, 245, 245, 0.562);
-    border-radius: 10%;
-    width: 310px;
-}
-@media (min-width: 768px){
-    .contenedor-promociones{
-        display: flex;
-        flex-direction: row;
-    }
-    
-}
-
-/* --------- PRODUCTOS --------- */
-.contenedor-productos1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.contenedor-productos1 img{
-    padding: 5px;
-    width: 300px;
     height: 300px;
+    width: 300px;
     object-fit: cover;
-    border-radius: 10%;
+    border-radius: 20px;
 }
-.contenedor-productos1 img:hover{
+.productos:hover{
     transform: scale(1.02);
     box-shadow: rgb(137, 194, 194) 0px 0px 27px 14px;
 }
-@media (min-width:630px) {
-    .contenedor-productos1{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px 20px;
-    }
+.equipo{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
 }
-@media (min-width:1024px) {
-    .contenedor-productos1{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-@media (min-width:1200px) {
-    .contenedor-productos1{
-        display: grid;
-        gap: 40px 40px;
-    }
-}
-
 /* --------- NOSOTROS --------- */
-.nosotros p{
+/* .nosotros p{
     text-align: justify;
     padding: 0px 20px;
     font-size: 1.2rem;
@@ -246,12 +74,7 @@ header nav ul li a:hover{
     width: 320px;
     padding: 10px;
 }
-.equipo img{
-    height: 250px;
-    width: 250px;
-    object-fit: cover;
-    border-radius: 50%;
-}
+
 .equipo h3{
     font-weight: bold;
     color: black;
@@ -282,7 +105,7 @@ header nav ul li a:hover{
         grid-column: 3/4;
     }
     
-}
+} */
 
 /* --------- CONTACTO --------- */
 .contacto{

@@ -1,78 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="shortcut icon" href="../img/logo-bartolo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <title>Bartolo-Nosotros</title>
 </head>
+
 <body>
     <!-- HEADER -->
     <header>
-        <h1><a href="../index.html">BARTOLO </a></h1>
-        <a href="../index.html">Impresiones 3D</a>
         <!-- MENU DE NAVEGACION -->
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./novedades.html">Novedades</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li class="nav"><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg border-bottom border-secondary">
+            <div class="container-fluid px-5">
+                <div class="navbar-brand d-flex flex-column align-items-center">
+                    <h1 class="fw-light"><a href="./index.html">BARTOLO</a></h1>
+                    <a class="fs-6" href="./index.html">Impresiones 3D</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav fs-5">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold " aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./novedades.html">Novedades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- MAIN -->
-    <main class="promociones">
-        <section class="nosotros">
+    <main class="container-fluid">
+        <section class="d-flex flex-column align-items-center p-3">
             <h2>NOSOTROS</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, dicta! Cum, veritatis fugit? Vel rem odio corporis velit nisi aut nostrum mollitia enim ut eius? Veritatis laudantium accusantium sit cum!</p>
+            <p class="w-75">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, dicta! Cum, veritatis
+                fugit? Vel rem
+                odio corporis velit nisi aut nostrum mollitia enim ut eius? Veritatis laudantium accusantium sit cum!
+            </p>
         </section>
-        <section class="equipo">
-            <div>
-                <img src="../img/cristina.jpg" alt="Cristina">
-                <h3>Cristina</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, inventore?</p>
+        <section class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
+            <div class="card m-3" style="width: 18rem;">
+                <img class="rounded-circle equipo p-3" src="../img/cristina.jpg" class="card-img-top" alt="Cristina">
+                <div class="card-body">
+                    <h3 class="card-text">Cristina</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, inventore?</p>
+                </div>
             </div>
-            <div>
-                <img src="../img/david.jpg" alt="">
-                <h3>David</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, dolore!</p>
+            <div class="card m-3" style="width: 18rem;">
+                <img class="rounded-circle equipo p-3" src=" ../img/david.jpg" class="card-img-top" alt="David">
+                <div class="card-body">
+                    <h3 class="card-text">David</h3>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia,
+                        dolore!</p>
+                </div>
             </div>
-            <div class="img-bartolo">
-                <img src="../img/bartolo.jpg" alt="Bartolo">
-                <h3>Bartolo</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, dolore!</p>
+            <div class="card m-3" style="width: 18rem;">
+                <img class="rounded-circle equipo p-3" src="../img/bartolo.jpg" class="card-img-top" alt="Bartolo">
+                <div class="card-body">
+                    <h3 class="card-text">Bartolp</h3>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia,
+                        dolore!</p>
+                </div>
             </div>
         </section>
     </main>
 
     <!-- PIE DE PAGINA -->
-    <footer class="pie">
-        <div class="contenedor-logo">
-            <h4><a href="../index.html">BARTOLO</a></h4>
-            <a href="../index.html">Impresiones 3D</a>
+    <footer class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-4 p-1 d-flex flex-column align-items-center">
+                <h4 class=""><a class="fw-light fs-1" href="./index.html">BARTOLO</a></h4>
+                <a href="./index.html">Impresiones 3D</a>
+            </div>
+            <div class="col-4 col-lg-2 p-2">
+                <h4 class="text-center fw-light fs-6">Nuestras Redes</h4>
+                <ul class="d-flex justify-content-center m-0 p-0">
+                    <li><a href="https://wa.me/5493413647674" target="_blank"><i class="bi-whatsapp p-1 fs-1"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/bartolo.impresiones/" target="_blank"><i
+                                class="bi-instagram p-1 fs-1"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-8 col-lg-6 p-2">
+                <h4 class="fw-light fs-6">Suscribite a nuestro Newslatter</h4>
+                <form action="GET" class="row">
+                    <div class="mb-3 col-8">
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="col-4 m-0 p-0">
+                        <button class="btn btn-primary shadow" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="redes-sociales">
-            <ul class="contenedor-redes">
-                <li><a href="https://wa.me/5493413647674" target="_blank"><i class="bi-whatsapp"></i></a></li>
-                <li><a href="https://www.instagram.com/bartolo.impresiones/" target="_blank"><i class="bi-instagram"></i></a></li>
-            </ul>
-        </div>
-        <!-- MENU DE NAVEGACION INFERIOR -->
-        <div class="contenedor-navInferior">
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/novedades.html">Novedades</a></li>
-                <li><a href="./pages/productos.html">Productos</a></li>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-        </div>
-        <span>Copyright - todos los derechos reservados</span>
+        <p class="text-center fw-light">Copyright - todos los derechos reservados</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
