@@ -1,80 +1,92 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif
 }
-ul, ol{
+
+ul,
+ol {
     list-style-type: none;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
-body{
+
+body {
     background-color: rgb(196, 245, 245);
 }
 
 
-p{
+p {
     text-align: justify;
 }
 
 /* --------- ENCABEZADO --------- */
-header{
+header {
     background-color: rgb(196, 245, 245);
     text-align: center;
     position: sticky;
     top: 0px;
     z-index: 1;
 }
-
-.nav-link{
+a:hover{
     color: black;
 }
-.carousel-item{
+
+.nav-link {
+    color: black;
+}
+
+.carousel-item {
     height: 450px;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
     font-weight: bold;
 }
 
-.productos{
+.productos {
     height: 300px;
     width: 300px;
     object-fit: cover;
     border-radius: 20px;
 }
-.productos:hover{
+
+.productos:hover {
     transform: scale(1.02);
     box-shadow: rgb(137, 194, 194) 0px 0px 27px 14px;
 }
-.equipo{
+
+.equipo {
     height: 250px;
     width: 250px;
     object-fit: cover;
 }
-.contacto{
+
+.contacto {
     width: 320px;
 }
-.contacto textarea{
+
+.contacto textarea {
     height: 250px;
 }
 
-.c-boton{
+.c-boton, button:visited{
     border: 1px rgb(185, 178, 178);
     background-color: rgb(185, 178, 178);
+    color: white;
 }
 
+.carousel-inner{
+    width: 400px;
+    height: 340px;
+}
 
-
-
-
-
-
-
-
-
-
-
+.carousel-item img {
+    width: 400px;
+    height: 320px;
+    object-fit: cover;
+}
