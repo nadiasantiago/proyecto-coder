@@ -71,9 +71,10 @@ header nav ul li a:hover {
     height: 250px;
 }
 
-.c-boton {
+.c-boton, button:visited{
     border: 1px rgb(185, 178, 178);
     background-color: rgb(185, 178, 178);
+    color: white;
 }
 
 .carousel-inner {
