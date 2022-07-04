@@ -74,7 +74,7 @@ header nav ul li a:hover {
     height: 250px;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
     .contacto{
         width: 600px;
     }
@@ -96,6 +96,20 @@ header nav ul li a:hover {
     width: 400px;
     height: 320px;
     object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .carousel-inner{
+        width: 600px;
+        height: 600px;
+    }
+    
+    .carousel-item img {
+        width: 600px;
+        height: 580px;
+        object-fit: cover;
+    }
+    
 }
 
 .contenedor{
