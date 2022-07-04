@@ -24,7 +24,7 @@ p {
     text-align: justify;
 }
 
-/* --------- ENCABEZADO --------- */
+
 header {
     background-color: rgb(196, 245, 245);
     text-align: center;
@@ -74,6 +74,13 @@ header nav ul li a:hover {
     height: 250px;
 }
 
+@media (min-width:768px) {
+    .contacto{
+        width: 600px;
+    }
+    
+}
+
 .c-boton, button:visited{
     border: 1px rgb(185, 178, 178);
     background-color: rgb(185, 178, 178);
@@ -89,4 +96,8 @@ header nav ul li a:hover {
     width: 400px;
     height: 320px;
     object-fit: cover;
+}
+
+.contenedor{
+    min-height: calc(100vh - 103.83px - 140.83px);
 }
