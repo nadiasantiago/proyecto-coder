@@ -56,16 +56,16 @@ header nav ul li a:hover {
     height: 600px;
   }
 }
-.carousel-inner-item {
+.carousel-item {
   height: 450px;
 }
-.carousel-inner-item-img {
+.carousel-item-img {
   width: 400px;
   height: 320px;
   object-fit: cover;
 }
 @media (min-width: 768px) {
-  .carousel-inner-item-img {
+  .carousel-item-img {
     width: 600px;
     height: 580px;
     object-fit: cover;

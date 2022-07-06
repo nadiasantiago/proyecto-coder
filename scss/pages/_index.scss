@@ -6,17 +6,17 @@
             width: 600px;
             height: 600px;
         }
-        &-item {
-            height: 450px;
-            &-img {
-                width: 400px;
-                height: 320px;
+    }
+    &-item {
+        height: 450px;
+        &-img {
+            width: 400px;
+            height: 320px;
+            object-fit: cover;
+            @media (min-width: 768px) {
+                width: 600px;
+                height: 580px;
                 object-fit: cover;
-                @media (min-width: 768px) {
-                    width: 600px;
-                    height: 580px;
-                    object-fit: cover;
-                }
             }
         }
     }
