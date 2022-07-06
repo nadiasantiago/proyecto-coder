@@ -1,0 +1,11 @@
+.productos {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    &:hover {
+        transform: scale(1.02);
+        box-shadow: rgb(137, 194, 194) 0px 0px 27px 14px;
+    }
+}
+

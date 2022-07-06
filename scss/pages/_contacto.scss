@@ -1,0 +1,11 @@
+.contacto {
+    width: 320px;
+    &_texto{
+        height: 250px;
+    }
+    @media (min-width: 768px) {
+        width: 600px;   
+    }
+}
+
+

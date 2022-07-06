@@ -1,117 +1,104 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
 }
 
-ul,
-ol {
-    list-style-type: none;
+ul {
+  list-style-type: none;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: #000000;
+}
+a:hover {
+  color: #000000;
+}
+
+p {
+  text-align: justify;
 }
 
 body {
-    background-color: rgb(196, 245, 245);
+  background-color: #c4f5ff;
 }
-
-
-p {
-    text-align: justify;
-}
-
 
 header {
-    background-color: rgb(196, 245, 245);
-    text-align: center;
-    position: sticky;
-    top: 0px;
-    z-index: 1;
+  background-color: #c4f5ff;
+  text-align: center;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
 }
-a:hover{
-    color: black;
-}
-
-.nav-link {
-    color: black;
-}
-
-.carousel-item {
-    height: 450px;
-}
-
 header nav ul li a:hover {
-    font-weight: bold;
+  font-weight: bold;
+}
+
+.contenedor {
+  min-height: calc(100vh - 103.83px - 140.83px);
+}
+
+.boton, .boton:visited {
+  border: 1px #b9b2b2;
+  background-color: #b9b2b2;
+  color: white;
+}
+
+.carousel-inner {
+  width: 400px;
+  height: 340px;
+}
+@media (min-width: 768px) {
+  .carousel-inner {
+    width: 600px;
+    height: 600px;
+  }
+}
+.carousel-inner-item {
+  height: 450px;
+}
+.carousel-inner-item-img {
+  width: 400px;
+  height: 320px;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .carousel-inner-item-img {
+    width: 600px;
+    height: 580px;
+    object-fit: cover;
+  }
 }
 
 .productos {
-    height: 300px;
-    width: 300px;
-    object-fit: cover;
-    border-radius: 20px;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 20px;
 }
-
 .productos:hover {
-    transform: scale(1.02);
-    box-shadow: rgb(137, 194, 194) 0px 0px 27px 14px;
+  transform: scale(1.02);
+  box-shadow: rgb(137, 194, 194) 0px 0px 27px 14px;
 }
 
 .equipo {
-    height: 250px;
-    width: 250px;
-    object-fit: cover;
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
 }
 
 .contacto {
-    width: 320px;
+  width: 320px;
 }
-
-.contacto textarea {
-    height: 250px;
+.contacto_texto {
+  height: 250px;
 }
-
 @media (min-width: 768px) {
-    .contacto{
-        width: 600px;
-    }
-    
+  .contacto {
+    width: 600px;
+  }
 }
 
-.c-boton, button:visited{
-    border: 1px rgb(185, 178, 178);
-    background-color: rgb(185, 178, 178);
-    color: white;
-}
-
-.carousel-inner{
-    width: 400px;
-    height: 340px;
-}
-
-.carousel-item img {
-    width: 400px;
-    height: 320px;
-    object-fit: cover;
-}
-
-@media (min-width: 768px) {
-    .carousel-inner{
-        width: 600px;
-        height: 600px;
-    }
-    
-    .carousel-item img {
-        width: 600px;
-        height: 580px;
-        object-fit: cover;
-    }
-    
-}
-
-.contenedor{
-    min-height: calc(100vh - 103.83px - 140.83px);
-}
+/*# sourceMappingURL=style.css.map */
