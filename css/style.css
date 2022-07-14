@@ -21,6 +21,29 @@ p {
   text-align: justify;
 }
 
+.letra-P {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.letra-M {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.letra-G {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.c-instagram {
+  color: rgb(228, 19, 99);
+}
+
+.c-whatsapp {
+  color: rgb(26, 182, 26);
+}
+
 body {
   background-color: #c4f5ff;
 }

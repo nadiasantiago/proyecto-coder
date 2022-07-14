@@ -22,8 +22,11 @@ header{
 .contenedor{
     min-height: calc(100vh - 103.83px - 140.83px);
 }
-.boton, .boton:visited{
+.boton{
     border: 1px $color-boton;
     background-color: $color-boton;
     color: $color-secundario;
+}
+.boton:visited{
+    @extend .boton
 }
