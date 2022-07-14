@@ -1,0 +1,16 @@
+@mixin font-size ($size, $weight) {
+    font-size: $size;
+    font-weight: $weight;
+}
+
+.letra-P{
+    @include font-size(1.5rem,200);
+}
+
+.letra-M{
+    @include font-size(2rem,400);
+}
+
+.letra-G{
+    @include font-size(2.5rem,500);
+}
