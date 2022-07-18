@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  font-family: "Dosis", sans-serif;
 }
 
 ul {
@@ -19,6 +19,11 @@ a:hover {
 
 p {
   text-align: justify;
+}
+
+.letra-PP {
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
 .letra-P {
@@ -69,8 +74,12 @@ header nav ul li a:hover {
   color: white;
 }
 
+.videoImpresion3D {
+  width: 97%;
+}
+
 .carousel-inner {
-  width: 400px;
+  width: 385px;
   height: 340px;
 }
 @media (min-width: 768px) {
@@ -83,7 +92,7 @@ header nav ul li a:hover {
   height: 450px;
 }
 .carousel-item-img {
-  width: 400px;
+  width: 385px;
   height: 320px;
   object-fit: cover;
 }
@@ -112,15 +121,36 @@ header nav ul li a:hover {
   object-fit: cover;
 }
 
-.contacto {
+.contacto_info {
   width: 320px;
 }
-.contacto_texto {
+.contacto_info_texto {
   height: 250px;
 }
 @media (min-width: 768px) {
-  .contacto {
+  .contacto_info {
     width: 600px;
+  }
+}
+.contacto_maps {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "video" "horarios";
+}
+.contacto_maps iframe {
+  width: 97%;
+  grid-area: "video";
+}
+.contacto_maps div {
+  grid-area: "horarios";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .contacto_maps {
+    grid-template-columns: 2fr 1fr;
   }
 }
 

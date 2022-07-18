@@ -2,6 +2,9 @@
     font-size: $size;
     font-weight: $weight;
 }
+.letra-PP{
+    @include font-size(1.2rem,400);
+}
 
 .letra-P{
     @include font-size(1.5rem,200);

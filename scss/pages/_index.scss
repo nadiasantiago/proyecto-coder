@@ -1,8 +1,11 @@
+.videoImpresion3D{
+    width: 97%;
+}
 .carousel {
     &-inner {
-        width: 400px;
+        width: 385px;
         height: 340px;
-        @media (min-width: 768px) {
+        @media (min-width: $mq-intermerdio) {
             width: 600px;
             height: 600px;
         }
@@ -10,10 +13,10 @@
     &-item {
         height: 450px;
         &-img {
-            width: 400px;
+            width: 385px;
             height: 320px;
             object-fit: cover;
-            @media (min-width: 768px) {
+            @media (min-width: $mq-intermerdio) {
                 width: 600px;
                 height: 580px;
                 object-fit: cover;

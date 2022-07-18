@@ -1,11 +1,33 @@
 .contacto {
-    width: 320px;
-    &_texto{
-        height: 250px;
+    &_info {
+        width: 320px;
+        &_texto {
+            height: 250px;
+        }
+        @media (min-width: $mq-intermerdio) {
+            width: 600px;
+        }
     }
-    @media (min-width: 768px) {
-        width: 600px;   
+    &_maps{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas:
+            "video"
+            "horarios";
+        iframe{
+            width: 97%;
+            grid-area: "video";
+        }
+        div{
+            grid-area: "horarios";
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        @media (min-width: $mq-intermerdio){
+            grid-template-columns: 2fr 1fr;
+        }
+
     }
 }
-
-

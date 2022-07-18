@@ -9,6 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;500&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../img/logo-bartolo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <title>Bartolo-Contacto</title>
@@ -52,58 +55,70 @@
     </header>
 
     <!-- MAIN -->
-    <main class="container-fluid py-3 contenedor">
-
-        <h2 class="text-center letra-G">Contacto</h2>
-
-        <form action="GET" class="d-flex flex-column align-items-center">
-            <div class="mb-3 contacto">
-                <label class="d-none" for="campo-nombre">Nombre y Apellido</label>
-                <input type="text" class="form-control" id="campo-nombre" placeholder="Nombre y Apellido" required>
+    <main class="container-fluid contenedor contacto">
+        <div class="py-3">
+            <h2 class="text-center letra-G">Contacto</h2>
+            <form action="GET" class="d-flex flex-column align-items-center">
+                <div class="mb-3 contacto_info">
+                    <label class="d-none" for="campo-nombre">Nombre y Apellido</label>
+                    <input type="text" class="form-control" id="campo-nombre" placeholder="Nombre y Apellido" required>
+                </div>
+                <div class="mb-3 contacto_info">
+                    <label class="d-none" for="campo-empresa">Empresa</label>
+                    <input class="form-control" type="text" id="campo-empresa" placeholder="Empresa">
+                </div>
+                <div class="mb-3 contacto_info">
+                    <label class="d-none" for="campo-email">Email</label>
+                    <input class="form-control" type="email" id="campo-email" placeholder="ejemplo@gmail.com" required>
+                </div>
+                <div class="mb-3 contacto_info">
+                    <label class="d-none" for="campo-tel">Teléfono</label>
+                    <input class="form-control" type="tel" id="campo-tel" placeholder="Teléfono">
+                </div>
+                <div class="mb-3 contacto_info">
+                    <textarea class="form-control contacto_info_texto" placeholder="Escriba un mensaje"
+                        id="floatingTextarea"></textarea>
+                    <label class="d-none" for="floatingTextarea">Escriba un mensaje</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Suscribirse al newsletter
+                    </label>
+                </div>
+                <button class="btn shadow boton" type="submit">Enviar Consulta</button>
+            </form>
+        </div>
+        <section class="contacto_maps py-3">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.7939846318595!2d-60.703450885142864!3d-32.95644817971386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7acc10052b15b%3A0x454ae1366dbf0484!2sRouill%C3%B3n%202371%2C%20S2000%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1658113003179!5m2!1ses!2sar"
+                width="600" height="450" style="border:0;" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div>
+                <h3>Horarios de Atención</h3>
+                <p>Lunes a Viernes: 9:00 a 18:00hs</p>
+                <p>Sábados: 9:00 a 13:00hs</p>
             </div>
-            <div class="mb-3 contacto">
-                <label class="d-none" for="campo-empresa">Empresa</label>
-                <input class="form-control" type="text" id="campo-empresa" placeholder="Empresa">
-            </div>
-            <div class="mb-3 contacto">
-                <label class="d-none" for="campo-email">Email</label>
-                <input class="form-control" type="email" id="campo-email" placeholder="ejemplo@gmail.com" required>
-            </div>
-            <div class="mb-3 contacto">
-                <label class="d-none" for="campo-tel">Teléfono</label>
-                <input class="form-control" type="tel" id="campo-tel" placeholder="Teléfono">
-            </div>
-            <div class="mb-3 contacto">
-                <textarea class="form-control contacto_texto" placeholder="Escriba un mensaje" id="floatingTextarea"></textarea>
-                <label class="d-none" for="floatingTextarea">Escriba un mensaje</label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                    Suscribirse al newsletter
-                </label>
-            </div>
-            <button class="btn shadow boton" type="submit">Enviar Consulta</button>
-        </form>
+        </section>
     </main>
-
     <!-- PIE DE PAGINA -->
     <footer class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-12 col-lg-4 p-1 d-flex flex-column align-items-center">
-                <h4 class=""><a class="fw-light fs-1" href="../index.html">BARTOLO</a></h4>
+            <div class="col-12 col-lg-4 p-3 d-flex flex-column align-items-center">
+                <h4 class="mb-0"><a class="fw-light fs-1" href="../index.html">BARTOLO</a></h4>
                 <a href="../index.html">Impresiones 3D</a>
             </div>
             <div class="col-4 col-lg-2">
-                <h4 class="text-center fw-light fs-6">Nuestras Redes</h4>
+                <h4 class="text-center letra-PP">Nuestras Redes</h4>
                 <ul class="d-flex justify-content-center m-0 p-0">
-                    <li><a href="https://wa.me/5493413647674" target="_blank"><i class="bi-whatsapp p-1 fs-1 c-whatsapp"></i></a></li>
+                    <li><a href="https://wa.me/5493413647674" target="_blank"><i
+                                class="bi-whatsapp letra-M px-1 c-whatsapp"></i></a></li>
                     <li><a href="https://www.instagram.com/bartolo.impresiones/" target="_blank"><i
-                                class="bi-instagram p-1 fs-1 c-instagram"></i></a></li>
+                                class="bi-instagram letra-M px-1 c-instagram"></i></a></li>
                 </ul>
             </div>
             <div class="col-8 col-lg-6">
-                <h4 class="fw-light fs-6">Suscribite a nuestro Newslatter</h4>
+                <h4 class="letra-PP">Suscribite a nuestro Newslatter</h4>
                 <form action="GET" class="row">
                     <div class="mb-3 col-8">
                         <input type="email" class="form-control" id="exampleFormControlInput1"
