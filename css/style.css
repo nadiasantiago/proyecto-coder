@@ -115,7 +115,11 @@ header nav ul li a:hover {
   box-shadow: rgb(137, 194, 194) 0px 0px 27px 14px;
 }
 
-.equipo {
+.card {
+  width: 300px;
+  height: 400px;
+}
+.card-equipo {
   height: 250px;
   width: 250px;
   object-fit: cover;
