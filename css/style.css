@@ -141,7 +141,7 @@ header nav ul li a:hover {
   width: 97%;
   grid-area: "video";
 }
-.contacto_maps div {
+.contacto_maps_horario {
   grid-area: "horarios";
   display: flex;
   flex-direction: column;

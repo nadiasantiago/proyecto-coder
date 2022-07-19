@@ -18,7 +18,7 @@
             width: 97%;
             grid-area: "video";
         }
-        div{
+        &_horario{
             grid-area: "horarios";
             display: flex;
             flex-direction: column;
@@ -28,6 +28,5 @@
         @media (min-width: $mq-intermerdio){
             grid-template-columns: 2fr 1fr;
         }
-
     }
 }
