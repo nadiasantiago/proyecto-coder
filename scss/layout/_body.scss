@@ -1,32 +1,29 @@
 body {
     background-color: $bg-color;
 }
-header{
+
+header {
     background-color: $bg-color;
     text-align: center;
     position: sticky;
     top: 0px;
     z-index: 1;
-    nav{
-        ul{
-            li{
-                a{
-                    &:hover{
-                        font-weight: bold;
-                    }
-                }
-            }
-        }
+    
+    nav ul li a:hover {
+        font-weight: bold;
     }
 }
-.contenedor{
+
+.contenedor {
     min-height: calc(100vh - 103.83px - 140.83px);
 }
-.boton{
+
+.boton {
     border: 1px $color-boton;
     background-color: $color-boton;
     color: $color-secundario;
 }
-.boton:visited{
+
+.boton:visited {
     @extend .boton
 }
