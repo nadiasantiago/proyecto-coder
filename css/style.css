@@ -41,12 +41,14 @@ p {
   font-weight: 500;
 }
 
-.c-instagram {
+.c-instagram:hover {
   color: rgb(228, 19, 99);
+  transition: all 500ms ease-out;
 }
 
-.c-whatsapp {
+.c-whatsapp:hover {
   color: rgb(26, 182, 26);
+  transition: all 500ms ease-out;
 }
 
 body {
@@ -156,6 +158,48 @@ header nav ul li a:hover {
   .contacto_maps {
     grid-template-columns: 2fr 1fr;
   }
+}
+
+.ingreso {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .ingreso {
+    flex-direction: row;
+  }
+}
+.ingreso-card {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+}
+.ingreso-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.ingreso-card-capa {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.664);
+  border-radius: 10px;
+  text-align: center;
+  justify-items: center;
+  opacity: 0;
+  visibility: hidden;
+}
+.ingreso-card:hover > .ingreso-card-capa {
+  opacity: 1;
+  visibility: visible;
+}
+.ingreso-card:hover > .ingreso-card-capa h3 {
+  margin-top: 130px;
+  transition: all 1s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,7 +4,8 @@ $redes: (
 );
 
 @each $red, $color in $redes{
-    .c-#{$red} {
+    .c-#{$red}:hover {
         color:$color;
+        transition: all 500ms ease-out;
     }
-}
+};
