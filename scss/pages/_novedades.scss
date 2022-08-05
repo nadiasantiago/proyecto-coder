@@ -26,6 +26,14 @@
             justify-items: center;
             opacity: 0;
             visibility: hidden;
+            button{
+                background-color: $color-boton;
+                border-color: $color-boton;
+                color: black;
+                border-radius: 5px;
+                width: 80px;
+                height: 30px;
+            }
         }
         &:hover > .ingreso-card-capa{
             opacity: 1;

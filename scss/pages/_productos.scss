@@ -6,6 +6,7 @@
     &:hover {
         transform: scale(1.02);
         box-shadow: rgb(137, 194, 194) 0px 0px 27px 14px;
+        transition: all 1s;
     }
 }
 

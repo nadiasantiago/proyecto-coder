@@ -115,6 +115,7 @@ header nav ul li a:hover {
 .productos:hover {
   transform: scale(1.02);
   box-shadow: rgb(137, 194, 194) 0px 0px 27px 14px;
+  transition: all 1s;
 }
 
 .card {
@@ -192,6 +193,14 @@ header nav ul li a:hover {
   justify-items: center;
   opacity: 0;
   visibility: hidden;
+}
+.ingreso-card-capa button {
+  background-color: #b9b2b2;
+  border-color: #b9b2b2;
+  color: black;
+  border-radius: 5px;
+  width: 80px;
+  height: 30px;
 }
 .ingreso-card:hover > .ingreso-card-capa {
   opacity: 1;
