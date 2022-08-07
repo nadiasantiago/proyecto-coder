@@ -1,12 +1,21 @@
-.productos {
-    height: 300px;
+.contenedor-producto {
     width: 300px;
-    object-fit: cover;
-    border-radius: 20px;
-    &:hover {
-        transform: scale(1.02);
-        box-shadow: rgb(137, 194, 194) 0px 0px 27px 14px;
-        transition: all 1s;
+    img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        &:hover {
+            transform: scale(1.02);
+            box-shadow: $color-sombra-prod 0px 0px 27px 14px;
+            transition: all 1s;
+        }
+    }
+    &-descripcion{
+        padding: 5px;
+        h3, p{
+        text-align: center;
+        margin: 0;
+        }
     }
 }
-

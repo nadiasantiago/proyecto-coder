@@ -106,16 +106,26 @@ header nav ul li a:hover {
   }
 }
 
-.productos {
-  height: 300px;
+.contenedor-producto {
   width: 300px;
+}
+.contenedor-producto img {
+  height: 300px;
+  width: 100%;
   object-fit: cover;
   border-radius: 20px;
 }
-.productos:hover {
+.contenedor-producto img:hover {
   transform: scale(1.02);
   box-shadow: rgb(137, 194, 194) 0px 0px 27px 14px;
   transition: all 1s;
+}
+.contenedor-producto-descripcion {
+  padding: 5px;
+}
+.contenedor-producto-descripcion h3, .contenedor-producto-descripcion p {
+  text-align: center;
+  margin: 0;
 }
 
 .card {
@@ -169,10 +179,11 @@ header nav ul li a:hover {
   position: relative;
   width: 300px;
   height: 300px;
+  margin: 5px;
 }
 .ingreso-card img {
-  width: 100%;
-  height: 100%;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -191,7 +202,7 @@ header nav ul li a:hover {
 .ingreso-card-capa button {
   background-color: #b9b2b2;
   border-color: #b9b2b2;
-  color: black;
+  color: #000000;
   border-radius: 5px;
   width: 80px;
   height: 30px;
